@@ -629,7 +629,7 @@
 		</h2>
 		<div id="section1" class="form-section">
 			<div id="volet">Informations sur le bien</div>
-			<form id="formulaire-bien" action="process_form.php" method="POST" class="form">
+			<form id="formulaire-bien" action="assets/php/process_form.php" method="POST" class="form">
 
 				<label for="com_code">ID du bien :</label>
 				<input type="number" id="ID_bien" name="ID_bien" min="0" required>
@@ -947,7 +947,7 @@
 			<div id="volet">Informations sur les mutations</div>
 			<div id="section2" class="form-section">
 
-				<form id="formulaire-mutation" action="process_form_v.php" method="POST" class="form">
+				<form id="formulaire-mutation" action="assets/php/process_form_v.php" method="POST" class="form">
 					<label for="bien_id">ID du bien :</label>
 					<input type="text" id="bien_id" name="bien_id" required>
 
@@ -1050,7 +1050,7 @@
 									pour la période du 1er janvier 2020 au 30 juin 2020.
 								</p>
 								<p>
-									<a href="requette_1.php" class="btn">Afficher les résultats</a>
+									<a href="assets/php/requette_1.php" class="btn">Afficher les résultats</a>
 								</p>
 							</div>
 						</div>
@@ -1069,7 +1069,7 @@
 									biens de type appartement et maison pour la période spécifiée.
 								</p>
 								<p>
-									<a href="requete_2.php" class="btn">Afficher les résultats</a>
+									<a href="assets/php/requete_2.php" class="btn">Afficher les résultats</a>
 								</p>
 							</div>
 						</div>
@@ -1087,7 +1087,7 @@
 									Pourcentage des ventes de chaque type de bien par rapport au total des ventes de
 									biens de type appartement et maison par région pour la période spécifiée.
 								</p>
-								<a href="requete_3.php" class="btn">Afficher les résultats</a>
+								<a href="assets/php/requete_3.php" class="btn">Afficher les résultats</a>
 							</div>
 						</div>
 					</div>
@@ -1120,7 +1120,7 @@
 					/* Couleur rouge plus clair au survol */
 				}
 			</style>
-			<a href='requete_4.php' class='back-button'>Prix du bien (euro/m2) par région </a>
+			<a href='assets/php/requete_4.php' class='back-button'>Prix du bien (euro/m2) par région </a>
 		</div>
 		<!--/.container-->
 
@@ -1214,7 +1214,7 @@
 
 			// Fonction pour récupérer et afficher les résultats
 			function fetchResults() {
-				fetch('requete_5.php') // Fichier PHP qui génère les résultats
+				fetch('assets/php/requete_5.php') // Fichier PHP qui génère les résultats
 					.then(response => response.text())
 					.then(data => {
 						document.getElementById('result-containerF').innerHTML = data;
@@ -1290,7 +1290,7 @@
 						resultatsDiv.innerHTML = ''; // Réinitialise le contenu
 					} else {
 						// Sinon, on affiche les résultats
-						fetch('requete_6.php')
+						fetch('assets/php/requete_6.php')
 							.then(response => response.text())
 							.then(data => {
 								resultatsDiv.innerHTML = data; // Charge les résultats
@@ -1310,7 +1310,7 @@
 						resultatsDiv.innerHTML = ''; // Réinitialise le contenu
 					} else {
 						// Sinon, on affiche les résultats
-						fetch('requete_7.php') // Remplacez 'requete_7.php' par le nom de votre fichier PHP
+						fetch('assets/php/requete_7.php') // Remplacez 'requete_7.php' par le nom de votre fichier PHP
 							.then(response => response.text())
 							.then(data => {
 								resultatsDiv.innerHTML = data; // Charge les résultats
@@ -1359,7 +1359,7 @@
 				/* Couleur au survol */
 			}
 		</style>
-		<a href="requete_9.php" style="text-decoration: none;">
+		<a href="assets/php/requete_9.php" style="text-decoration: none;">
 			<button>Afficher les résultats des communes les plus chère selon un département</button>
 		</a>
 	</section>

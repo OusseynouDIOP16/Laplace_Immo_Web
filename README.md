@@ -5,6 +5,8 @@
 # CREATION  D’UNE BASE DE DONNÉES IMMOBILIÈRE POUR LA SOCIETE IMMO LAPLACE 
 Projet réalisé par **Fallou NGOM** , **Cheikna Amala YATABARE** , **Ousseynou DIOP** , **Mamadou Lamine NDAO**, **Papa Abdourahmane CISSE**
 
+*eleves ingénieurs statisticiens économistes en deuxième année (ISE2 -ENSAE)
+
 ## Objectif du Projet  
 Le but de ce projet est de créer une base de données immobilière en intégrant des données publiques françaises provenant de plusieurs sources, telles que le fichier des demandes de valeurs foncières, le référentiel géographique des régions, et les données de recensement de l’INSEE. Ces fichiers, accessibles librement sur différents sites gouvernementaux, sont volumineux et comportent de nombreux champs. Un choix précis des données à inclure a été effectué (consultez le dossier « données brutes » pour les fichiers sources et le dictionnaire des données pour la liste des colonnes intégrées dans la base).
 Les notes de présentation jointes à ce projet visent à :
@@ -40,4 +42,4 @@ Les notes de présentation jointes à ce projet visent à :
 ## Technologies & Logiciels utilisés
 * Excel 
 * MySQL / MySQL Workbench / adminer.php
-* HTML/ CSS/ JavaScript
+* HTML/ CSS/ JavaScript/Php
